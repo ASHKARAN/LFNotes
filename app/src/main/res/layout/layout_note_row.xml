@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:id="@+id/parent"
+    android:background="?selectableItemBackground">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/icon"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle_background"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/state"
+        android:padding="4dp"
+        android:clickable="true"
+        android:background="?selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/ic_remove_red_eye_black_24dp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="16dp"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryText"
+        android:text="@string/app_name"
+        android:id="@+id/title"
+        android:layout_toStartOf="@+id/state"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="16dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_toEndOf="@+id/icon"
+        android:paddingLeft="8dp"
+        android:text="@string/lipsum"
+        android:id="@+id/message"
+        android:maxLines="2"
+        android:ellipsize="marquee"
+        android:textColor="@color/colorSecondaryText" />
+
+</RelativeLayout>

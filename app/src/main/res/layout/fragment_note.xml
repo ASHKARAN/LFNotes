@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragments.SettingsFragment">
+
+
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shimmer_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_layout="@layout/layout_note_row_shimmer"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        app:shimmer_demo_angle="20"
+        />
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/noNote"
+        android:id="@+id/noNote"
+        android:visibility="gone"
+        android:textSize="24sp"
+        android:gravity="center"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:id="@+id/add"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:tint="@color/colorIcons"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"/>
+
+
+</RelativeLayout>

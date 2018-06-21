@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LFNotes</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="rePassword">Type password again</string>
+    <string name="login">LOG IN</string>
+    <string name="logout">LOG OUT</string>
+    <string name="register">Register new account</string>
+    <string name="oldUser">Login with existing account</string>
+    <string name="signUp">REGISTER</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="other">Other</string>
+
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="note">Note</string>
+    <string name="lipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <string name="addNote">Add note...</string>
+    <string name="title">Title</string>
+    <string name="message">Note...</string>
+    <string name="noNote">Tap + to create new Note</string>
+</resources>

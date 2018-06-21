@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="16dp"
+    android:background="@color/colorPrimary2">
+
+
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:shimmer_animation_duration="5000"
+        app:shimmer_auto_start="true"
+        app:shimmer_color="@color/colorPrimaryLight"
+        app:shimmer_reverse_animation="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                app:srcCompat="@drawable/logo1"
+                android:id="@+id/logo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:layout_centerVertical="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/login_icon"
+                android:id="@+id/emailIcon"
+                app:srcCompat="@drawable/ic_email_black_24dp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:hint="@string/email"
+                style="@style/login_text" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/passwordIcon"
+                app:srcCompat="@drawable/ic_lock_black_24dp"
+                style="@style/login_icon" />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                style="@style/login_text" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/rePasswordIcon"
+                app:srcCompat="@drawable/ic_lock_black_24dp"
+                style="@style/login_icon" />
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/rePassword"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/rePassword"
+                style="@style/login_text" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/fnameIcon"
+                app:srcCompat="@drawable/ic_account_box_black_24dp"
+                style="@style/login_icon" />
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/fname"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:hint="@string/fname"
+                style="@style/login_text" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/lnameIcon"
+                app:srcCompat="@drawable/ic_account_box_black_24dp"
+                style="@style/login_icon" />
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/lname"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:hint="@string/lname"
+                style="@style/login_text" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+
+            <RadioGroup
+                android:id="@+id/sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male"
+                    android:textColor="@color/colorDivider"
+                    android:id="@+id/male"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorDivider"
+                    android:text="@string/female"/>
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorDivider"
+                    android:text="@string/other" />
+
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="32dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/login_btn"
+                android:text="@string/signUp"
+                android:id="@+id/register" />
+
+
+        </RelativeLayout>
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressBar"
+            android:visibility="invisible"
+            style="@style/SpinKitView.ThreeBounce"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorDivider" />
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:text="@string/oldUser"
+        android:layout_marginTop="16dp"
+        style="@style/login_btn"
+        android:id="@+id/login"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

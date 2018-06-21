@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:id="@+id/icon"
+        android:background="@drawable/circle_background"/>
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/state"
+        android:padding="4dp"
+        android:clickable="true"
+        android:background="@color/colorPrimaryLight"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="@color/colorPrimaryText"
+        android:text="                                       "
+        android:id="@+id/title"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/icon"
+        android:paddingLeft="8dp"
+        android:id="@+id/message"
+        android:text="                                                       "
+        android:maxLines="3"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="@color/colorSecondaryText" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/icon"
+        android:paddingLeft="8dp"
+        android:text="                                                       "
+        android:maxLines="3"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="@color/colorSecondaryText" />
+
+
+
+</RelativeLayout>
